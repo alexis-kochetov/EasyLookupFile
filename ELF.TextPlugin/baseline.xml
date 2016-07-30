@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assembly>
+  <Method Name="ELF.TextPlugin.TextSearchParameters.set_Substring(System.String)">
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || MinSize &gt;= 0" PrimaryILOffset="35" MethodILOffset="15" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MaxSize.HasValue || MaxSize &gt;= 0" PrimaryILOffset="6f" MethodILOffset="15" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || !MaxSize.HasValue || (MinSize.Value &lt;= MaxSize.Value)" PrimaryILOffset="c2" MethodILOffset="15" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinCreationDate.HasValue || !MaxCreationDate.HasValue || (MinCreationDate.Value &lt;= MaxCreationDate.Value)" PrimaryILOffset="115" MethodILOffset="15" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !FileAttributesMask.HasValue || SearchHelper.FileAttributesMaskIsValid(FileAttributesMask.Value)" PrimaryILOffset="148" MethodILOffset="15" />
+  </Method>
+  <Method Name="ELF.TextPlugin.TextSearchParameters..ctor()">
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || MinSize &gt;= 0" PrimaryILOffset="35" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MaxSize.HasValue || MaxSize &gt;= 0" PrimaryILOffset="6f" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || !MaxSize.HasValue || (MinSize.Value &lt;= MaxSize.Value)" PrimaryILOffset="c2" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinCreationDate.HasValue || !MaxCreationDate.HasValue || (MinCreationDate.Value &lt;= MaxCreationDate.Value)" PrimaryILOffset="115" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !FileAttributesMask.HasValue || SearchHelper.FileAttributesMaskIsValid(FileAttributesMask.Value)" PrimaryILOffset="148" MethodILOffset="6" />
+  </Method>
+  <Method Name="ELF.TextPlugin.TextSearchStrategy.Match(System.IO.FileInfo)">
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: source != null" PrimaryILOffset="d" MethodILOffset="17" />
+  </Method>
+  <Method Name="ELF.TextPlugin.TextSearchStrategyFactory.CreateStrategy(ELF.Core.SearchParameters)">
+    <Outcome Kind="Ensures" Outcome="Top" Message="ensures unproven: Contract.Result&lt;ISearchStrategy&gt;()!=null" PrimaryILOffset="23" MethodILOffset="f" />
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: !String.IsNullOrEmpty(substring)" PrimaryILOffset="f" MethodILOffset="16" />
+  </Method>
+</Assembly>

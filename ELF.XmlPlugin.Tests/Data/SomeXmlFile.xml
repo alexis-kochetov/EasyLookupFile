@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+  <nested name="Alpha">A</nested>
+  <nested>B</nested>
+  <nested>C</nested>
+</root>

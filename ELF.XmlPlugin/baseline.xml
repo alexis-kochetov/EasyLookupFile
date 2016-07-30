@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assembly>
+  <Method Name="ELF.XmlPlugin.XPathHelper.Compile(System.String)">
+    <Outcome Kind="Informational" Outcome="Bottom" Message="Assumption can be proven: Consider changing it into an assert." PrimaryILOffset="46" MethodILOffset="0" />
+    <Outcome Kind="Ensures" Outcome="Top" Message="ensures unproven: Contract.Result&lt;XPathExpression&gt;() != null" PrimaryILOffset="19" MethodILOffset="4c" />
+  </Method>
+  <Method Name="ELF.XmlPlugin.XPathHelper.XPathPatternIsValid(System.String)">
+    <Outcome Kind="Informational" Outcome="Bottom" Message="Contract.Requires(!string.IsNullOrEmpty(xPathPattern));" PrimaryILOffset="1" MethodILOffset="0" />
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: !string.IsNullOrEmpty(xPathPattern)" PrimaryILOffset="9" MethodILOffset="1" />
+  </Method>
+  <Method Name="ELF.XmlPlugin.XmlSearchParameters.set_XPathPattern(System.String)">
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || MinSize &gt;= 0" PrimaryILOffset="35" MethodILOffset="20" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MaxSize.HasValue || MaxSize &gt;= 0" PrimaryILOffset="6f" MethodILOffset="20" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || !MaxSize.HasValue || (MinSize.Value &lt;= MaxSize.Value)" PrimaryILOffset="c2" MethodILOffset="20" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinCreationDate.HasValue || !MaxCreationDate.HasValue || (MinCreationDate.Value &lt;= MaxCreationDate.Value)" PrimaryILOffset="115" MethodILOffset="20" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !FileAttributesMask.HasValue || SearchHelper.FileAttributesMaskIsValid(FileAttributesMask.Value)" PrimaryILOffset="148" MethodILOffset="20" />
+  </Method>
+  <Method Name="ELF.XmlPlugin.XmlSearchParameters..ctor()">
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || MinSize &gt;= 0" PrimaryILOffset="35" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MaxSize.HasValue || MaxSize &gt;= 0" PrimaryILOffset="6f" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinSize.HasValue || !MaxSize.HasValue || (MinSize.Value &lt;= MaxSize.Value)" PrimaryILOffset="c2" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !MinCreationDate.HasValue || !MaxCreationDate.HasValue || (MinCreationDate.Value &lt;= MaxCreationDate.Value)" PrimaryILOffset="115" MethodILOffset="6" />
+    <Outcome Kind="Invariant" Outcome="Top" Message="invariant unproven: !FileAttributesMask.HasValue || SearchHelper.FileAttributesMaskIsValid(FileAttributesMask.Value)" PrimaryILOffset="148" MethodILOffset="6" />
+  </Method>
+  <Method Name="ELF.XmlPlugin.XmlSearchStrategy.Match(System.IO.FileInfo)">
+    <Outcome Kind="Nonnull" Outcome="Top" Message="Possibly calling a method on a null reference 'xPathNavigator'" PrimaryILOffset="21" MethodILOffset="0" />
+  </Method>
+  <Method Name="ELF.XmlPlugin.XmlSearchStrategyFactory.CreateStrategy(ELF.Core.SearchParameters)">
+    <Outcome Kind="Ensures" Outcome="Top" Message="ensures unproven: Contract.Result&lt;ISearchStrategy&gt;()!=null" PrimaryILOffset="23" MethodILOffset="f" />
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: !String.IsNullOrEmpty(xPathPattern)" PrimaryILOffset="f" MethodILOffset="16" />
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: XPathHelper.XPathPatternIsValid(xPathPattern)" PrimaryILOffset="1a" MethodILOffset="16" />
+  </Method>
+</Assembly>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assembly>
+  <Outcome Message="Detected call to method 'System.IO.Directory.Exists(System.String)' without [Pure] in contracts of method 'ELF.Core.SearchSettings.#ctor(System.String,System.IO.SearchOption)'." />
+</Assembly>

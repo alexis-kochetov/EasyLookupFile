@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assembly>
+  <Method Name="ELF.XmlPlugin.XmlSearchStrategy.Match(System.IO.FileInfo)">
+    <Outcome Kind="Nonnull" Outcome="Top" Message="Possibly calling a method on a null reference 'fileInfo'" PrimaryILOffset="1" MethodILOffset="0" />
+  </Method>
+  <Method Name="ELF.XmlPlugin.XmlSearchStrategyFactory.CreateStrategy(ELF.Contracts.SearchParameters)">
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: XPathHelper.XPathPatternIsValid(xPathPattern)" PrimaryILOffset="1a" MethodILOffset="23" />
+  </Method>
+</Assembly>

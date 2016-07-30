@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assembly>
+  <Method Name="ELF.TextPlugin.TextSearchStrategy.Match(System.IO.FileInfo)">
+    <Outcome Kind="Nonnull" Outcome="Top" Message="Possibly calling a method on a null reference 'fileInfo'" PrimaryILOffset="1" MethodILOffset="0" />
+  </Method>
+</Assembly>

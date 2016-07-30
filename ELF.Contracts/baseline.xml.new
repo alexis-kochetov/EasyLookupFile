@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Assembly>
+  <Method Name="ELF.Contracts.CompositeSearchStrategy.get_Strategies()">
+    <Outcome Kind="Nonnull" Outcome="Top" Message="Possible use of a null array 'System.Diagnostics.Contracts.Contract.Result()'" PrimaryILOffset="15" MethodILOffset="0" />
+    <Outcome Kind="Nonnull" Outcome="Top" Message="Possible use of a null array 'this.strategies'" PrimaryILOffset="1d" MethodILOffset="0" />
+  </Method>
+  <Method Name="ELF.Contracts.CompositeSearchStrategy..ctor(System.Collections.Generic.IEnumerable&lt;ELF.Contracts.ISearchStrategy)">
+    <Outcome Kind="Nonnull" Outcome="False" Message="Use of a null array 'this.strategies'" PrimaryILOffset="39" MethodILOffset="0" />
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: source != null" PrimaryILOffset="d" MethodILOffset="13" />
+    <Outcome Kind="Informational" Outcome="Bottom" Message="Contract.Requires(strategies != null);" PrimaryILOffset="1" MethodILOffset="0" />
+  </Method>
+  <Method Name="ELF.Contracts.SearchSettings..ctor(System.String,System.IO.SearchOption)">
+    <Outcome Kind="Requires" Outcome="Top" Message="requires unproven: path != null" PrimaryILOffset="d" MethodILOffset="15" />
+    <Outcome Kind="Informational" Outcome="Bottom" Message="Contract.Requires(path != null);" PrimaryILOffset="1" MethodILOffset="0" />
+  </Method>
+</Assembly>
